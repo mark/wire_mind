@@ -28,7 +28,7 @@ module WireMind
 
     def [](cells)
       case cells
-      when Fixnum then [ get(cells) ]
+      when Fixnum then get(cells)
       when Array  then cells.map { |c| get(c) }
       end
     end

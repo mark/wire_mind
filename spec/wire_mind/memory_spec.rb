@@ -9,11 +9,11 @@ describe Memory do
   describe "getting values" do
 
     it "defaults to 0" do
-      subject[3].must_equal [0]
+      subject[3].must_equal 0
     end
 
     it "defaults to 0 even for extra cells" do
-      subject[20].must_equal [0]
+      subject[20].must_equal 0
     end
 
     it "fetches multiple elements at once" do
@@ -30,12 +30,12 @@ describe Memory do
 
     it "stores values passed in" do
       subject[3] = 1
-      subject[3].must_equal [1]
+      subject[3].must_equal 1
     end
 
     it "stores values in extra cells" do
       subject[20] = 1
-      subject[20].must_equal [1]
+      subject[20].must_equal 1
     end
 
     it "fetches multiple elements at once" do
